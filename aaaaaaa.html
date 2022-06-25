@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center-left;
+  padding: 1px;
+}
+
+tr:nth-child(odd) {
+  background-color: #fc0f03;
+}
+</style>
+</head>
+
+<center><h2 style="font-family:arial;">HTML INLINE VS. BLOCK ELEMENTS</h2></center>
+
+<table style="width:100%">
+  <tr>
+    <th><p style="color: white">INLINE ELEMENTS</p></th>
+    <th><p style="color: white">BLOCK ELEMENTS</p></th> 
+  </tr>
+  <tr>
+    <td>The following span is an <span style="background-color:lime;color:white;padding:1px;">inline element</span>; its background has been colored to display both the beginning and end of the inline element's influence</td>
+    <td>The following is a 
+    <div style="background-color:blue;color:white;padding:1px;">block-level element;</div>
+    its background has been colored to display both the beginning and end of the block-level element's influence.</td>
+  </tr>
+</table>
+
+</body>
+</html>

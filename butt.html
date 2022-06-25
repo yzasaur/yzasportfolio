@@ -1,0 +1,134 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> DICE ACTIVITY (CSS BOX MODEL)</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.wrapper {
+  width: 200px;
+  height: 200px;
+  border: solid black 20px;
+  border-radius: 30px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:black;
+}
+
+.div2{
+  display: flex ;
+  justify-content: space-between;
+}
+
+.div2 .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.div3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div3 .dot:nth-of-type(1) {
+  align-self :flex-end;
+}
+
+.div3 .dot:nth-of-type(2) {
+  align-self :center;
+}
+
+
+.div4 , .div6, .div5{
+  display: flex;
+  justify-content: space-between;
+}
+
+.div6 .column , .div4 .column, .div5 .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.div5 .column:nth-of-type(2) {
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+<div class="wrapper div1">
+  <span class="dot">
+  </span>
+</div>
+
+<div class="wrapper div2">
+  <span class="dot">
+  </span>
+  <span class="dot">
+  </span>
+</div>
+
+<div class="wrapper div3">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<div class="div4 wrapper">
+  <div class="column">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <div class="column">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+<div class="div5 wrapper">
+  
+  <div class="column">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  
+  <div class="column">
+    <span class="dot"></span>
+  </div>
+  
+  <div class="column">
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</div>
+<div class="div6 wrapper">
+  <div class="column">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <div class="column">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</div>
+</body>
+</html>
